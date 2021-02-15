@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Covid-Center</title>
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+
+
+
+<style type="text/css">
+
+</style>
+</head>
+<body>
+<div>
+<h5 style="margin-left: 11%;">Patiant Details</h5>
+</div>
+<hr width="100%">
+
+
+<div class="container-fluid">
+ 
+ 
+    <div class="form-group">
+   
+  
+  
+  <form action="Task" method="post" style="margin-left: 12%;" id="form1">
+   <div class="row">
+  <div class="col-md-6" id="col1">
+  <div class="row mb-3" style="width: 700px;">
+    <label for="inputEmail3">First Name:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="fname"  name="fname" style="margin-left: 65px;width: 400px;">
+    </div>
+  </div>
+  <div class="row mb-3" style="width: 700px;">
+    <label for="" style="padding-right: 9%;">Age:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" name="age" style="margin-left: 50px;width: 400px;">
+    </div>
+  </div>
+  <div class="row mb-3" style="width: 700px;">
+    <label for="inputEmail3" c style="padding-right: 9%;">DOB:</label>
+    <div class="col-sm-10">
+      <input type="date" class="form-control" name="dob" style="margin-left: 48px;width: 400px;">
+    </div>
+  </div>
+  
+  <div class="row mb-3" style="width: 650px;">
+  <label>Hospital Name:</label>
+  <select class="form-select" aria-label="Default select example" name="Hname" style="width: 398px;height: 30%;margin-left: 58px;">
+  <option selected></option> 
+  <option value="1">Shree Hospital</option>
+  <option value="2">Birla Hospital</option>
+  <option value="3">Sasun</option>
+</select>
+ 
+</div>
+   <div class="row mb-3" style="width: 700px;">
+    <label for="inputPassword" >Total Amount:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" name="total" style="margin-left: 50px;width: 400px;">
+    </div>
+  </div>
+  
+  
+
+ 
+  
+  </div>
+  
+  <div class="col-md-6">
+  <div class="mb-3 row">
+    <label for="inputPassword" >Last Name:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" name="lname" style="margin-left: 85px;width: 400px;">
+    </div>
+  </div>
+  <div class="row mb-3" style="width: 650px;">
+  <label>City:</label>
+  <select class="form-select" aria-label="Default select example"  name="city" style="width: 400px;height: 30%;margin-left: 148px;">
+  <option selected></option>
+  <option value="1">Pune</option>
+  <option value="2">Thane</option>
+  <option value="3">Solapur</option>
+</select>
+ 
+</div>
+  <div class="mb-3 row">
+    <label for="inputPassword" >Admission Date:</label>
+    <div class="col-sm-10">
+      <input type="date" class="form-control" name="Adate" style="margin-left: 47px;width: 400px;">
+    </div>
+  </div>
+  
+  <div class="mb-3 row">
+    <label for="inputPassword" >Discharge Date:</label>
+    <div class="col-sm-10">
+      <input type="date" class="form-control" name="Ddate" style="margin-left: 50px;width: 400px;">
+    </div>
+  </div><br><br><br>
+  
+  
+ </div>
+ 
+ </div>
+
+ </form>
+ 
+ </div>
+ </div>
+
+
+  <div class="container">
+
+    
+     <h5>Test Details<button class="btn btn-primary" data-target="#mymodel" data-toggle="modal" style="margin-left: 900px;">Add Test</button> 
+       </h5>
+       <div class="modal " id="mymodel">
+           <div class="modal-dialog modal-dialog-centered"   style="width: 700px;" align="center">
+              <div class="modal-content" style="width: 700px;margin-right: 30">
+              
+                 <div class="modal-header">
+                   <h5 class="text-secondary">Add Test Details</h5>
+                    <button  type="button" class="close" data-dissmiss="modal ">&times;</button>
+                   
+                 </div>
+              
+                  <div class="modal-body" style="width: 700px;">
+                     <div class="form-group">
+                         
+                           <form action="">
+                           <div class="row">
+                           <div class="col-md-6">
+                           <div class="row mb-3">
+                           <label for="testname" class="col-sm-2 col-form-label">Test Name:</label>
+                                  <div class="col-sm-10">
+                            <input type="text" class="form-control" id="testname" autocomplete="on" style="width: 90%;">
+                            </div>
+                           </div>
+                         <div class="row mb-3">
+                       <label for="inputPassword3" class="col-sm-2 col-form-label">Test Price:</label>
+                          <div class="col-sm-10">
+                       <input type="text" class="form-control" id="inputPassword3"  style="width: 90%;">
+                    </div>
+                    </div>
+                           
+                             <div class="row mb-3">
+                       <label for="inputPassword3" class="col-sm-2 col-form-label">Doctor Remark:</label>
+                          <div class="col-sm-10">
+                       <textarea  class="form-control" name="remark" id="inputPassword3"  style="width: 90%;"></textarea>
+                    </div>
+                    </div>
+                    
+                           </div>
+                           
+                           
+                           <div class="col-md-6">
+                              <div class="row mb-3">
+                       <label for="inputPassword3" class="col-sm-2 col-form-label" style="padding-left: 10px;">Test Date:</label>
+                          <div class="col-sm-10">
+                       <input type="date" class="form-control" id="inputPassword3" style="width: 90%;">
+                    </div>
+                    </div>
+                    
+                    
+                      <div class="row mb-3">
+                       <label for="inputPassword3" class="col-sm-2 col-form-label" style="padding-left: 10px;">Test Result:</label>
+                          <div class="col-sm-10">
+                       <input type="text" class="form-control" id="inputPassword3" style="width: 90%;">
+                    </div>
+                    </div>
+                         
+                           </div>
+         
+                          </div>
+                           </form>                          
+                        
+                     </div>
+                  
+                  </div>
+                 
+                 
+                 <div class="modal-footer">
+                    
+                     <button class="btn btn-outline-secondary" data-target="#mymodel" data-dissmiss="modal ">Save</button>
+                 
+                 </div>
+                 
+              
+              </div>
+           
+           </div>
+       
+       </div>
+
+</div>
+  
+
+
+
+   
+                
+              
+          <hr width="100%">
+         
+         <div>
+         <table class="table table-bordered" style="margin-left: 13%; margin-right: 10%; width: 73%;">
+  <thead>
+    <tr>
+      <th scope="col">Test Name</th>
+      <th scope="col">Test Date</th>
+      <th scope="col">Test Price</th>
+      <th scope="col">Test Result</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>COVID 19</td>
+      <td>11-02-2021</td>
+      <td>400.00</td>
+      <td>-ve</td>
+      <td><button class="btn btn-info">Edit</button><button class="btn btn-danger">Delete</button></td> 
+    </tr>
+    
+  </tbody>
+</table>
+         </div>
+         
+         
+         <div>
+          <button class="btn btn-success" type="submit" form="form1" value="Submit" style="margin-left: 50%;">Submit</button>
+         </div>
+
+
+
+</body>
+</html>
